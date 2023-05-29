@@ -215,7 +215,6 @@ print("#----------------------------------------------------------------------")
 print("# Place and Route finished")
 print("#----------------------------------------------------------------------")
 
-time.sleep(2)
 
 p = sp.Popen(["make", "magic_drc", "PLATFORM_ARG=" + args.platform, "SPICE_FILE=" + spice_file], cwd=flowDir)
 p.wait()
@@ -224,7 +223,6 @@ print("#----------------------------------------------------------------------")
 print("# DRC finished")
 print("#----------------------------------------------------------------------")
 
-time.sleep(2)
 
 p = sp.Popen(["make", "netgen_lvs", "PLATFORM_ARG=" + args.platform, "SPICE_FILE=" + spice_file], cwd=flowDir)
 p.wait()
@@ -287,7 +285,6 @@ shutil.copyfile(
 )
 
 
-time.sleep(2)
 
 print("#----------------------------------------------------------------------")
 print("# Macro Generated")

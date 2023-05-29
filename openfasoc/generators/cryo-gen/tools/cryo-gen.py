@@ -294,10 +294,6 @@ if args.mode == "macro":
     print("Exiting tool....")
     exit()
 
-p = sp.Popen(["yum", "install", "-y", "libXaw-devel"])
-p.wait()
-p = sp.Popen(["yum", "install", "-y", "libXaw"])
-p.wait()
 
 pdks_path = "/usr/bin/miniconda3/share/pdk/"
 

@@ -21,7 +21,7 @@ help:banner
 	@@echo "    >> This will create the verilog file for the cryo IP. It doesn't create a macro, won't create lef/def/gds files and won't run simulations "
 	@@echo "2. make [sky130hd, sky130hvl, sky130hs]_cryo"
 	@@echo "    >> This will create the macro for the cryo, creates the lef/def/gds/spice netlist files and performs lvs/drc checks. But this won't run simulations."
-	@@echo "3. make [sky130hd, sky130hvl, sky130hs]_temp_full [sim=pex]"
+	@@echo "3. make [sky130hd, sky130hvl, sky130hs]_cryo_full [sim=pex]"
 	@@echo "    >> This will create the macro for the cryo, creates the lef/def/gds/spice netlist files, performs lvs/drc checks and also runs simulations."
 	@@echo "    >> Note: Only Pre-PEX simulations are performed, by default, under this target. To perform Post-PEX simulations as well, set sim to 'pex' as shown in the target definition"
 	@@echo "4. make clean"

@@ -118,8 +118,8 @@ export IO_PLACER_V = met2
 # keep with gf
 ##################new changes
 
-export CELL_PAD_IN_SITES_GLOBAL_PLACEMENT = 1
-export CELL_PAD_IN_SITES_DETAIL_PLACEMENT = 0
+export CELL_PAD_IN_SITES_GLOBAL_PLACEMENT ?= 1
+export CELL_PAD_IN_SITES_DETAIL_PLACEMENT ?= 0
 #####################
 # Define fill cells
 export FILL_CELLS = sky130_fd_sc_hvl__fill_1 sky130_fd_sc_hvl__fill_2 sky130_fd_sc_hvl__fill_4 sky130_fd_sc_hvl__fill_8
